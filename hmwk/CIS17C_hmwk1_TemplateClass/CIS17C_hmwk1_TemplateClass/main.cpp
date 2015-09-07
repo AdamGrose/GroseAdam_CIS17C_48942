@@ -7,12 +7,14 @@
 
 #include "Matrix.h"
 
-using namespace std;
-
 int main(int argc, char** argv) {
     
-    Matrix<int> a();
-    //a.template prntarrays<int>();
+    int col = 10;
+    Matrix<int> a(col);
+    a.prntarrays();
+    
+    Matrix<char> b(col);
+    b.prntarrays();
     return 0;
 }
 
